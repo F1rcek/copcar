@@ -1,0 +1,207 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    transition: .5s ease-in-out; /* добавим плавность переходов для всех элементов страницы*/
+    }
+    ul {
+    list-style: none;
+    }
+    a {
+    text-decoration: none;
+    outline: none;
+    }
+    img {
+    display: block;
+    width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    letter-spacing: 1px;
+    }
+    input{
+        border: none;
+        box-shadow: none;
+        outline: none;
+    }
+    a{
+        color: white;
+    }
+    body {
+    font-family: 'Open Sans', arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color: #373737;
+    background: #f7f7f7;
+    }
+    /* добавим очистку потока для всех контейнеров, внутри которых задано обтекание дочерних элементов */
+    header:after, .container:after, footer:after, .widget-posts-list li:after, #subscribe:after {
+    content: "";
+    display: table;
+    clear: both;
+    } 
+
+
+
+    /*       ТИПОГРАФИКА   */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+    .btn-text{
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.78px;
+        text-align: left;
+        color: #ffffff;
+    }
+
+    .title{
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 29.05px;
+        text-align: left;
+        color: #ffffff;
+    }
+    .item{
+        font-family: Inter;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 21.78px;
+        text-align: left;
+        color: #ffffff;
+    }
+    /*                        */
+    body{
+        background-color: #161616;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .container{
+     
+        width: 928px;
+        
+    }
+
+
+    .header{
+        width: 100%;
+        height: 68px;
+        display: flex;
+        margin-top: 24px;
+        &__nav-bar{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 18px;
+            background-color: #202020;
+            align-items: center;
+            padding-left: 15px;
+            padding-right: 15px;
+            &__item{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+    
+    .menu{
+        margin-top: 64px;
+        &__title{
+            width: 460px;
+        }
+        &__container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 18px;
+        }
+    }
+    .mblock{
+        width: 460px;
+        background-color: #202020;
+        height: 250px;
+        border-radius: 24px;
+        padding-left: 24px;
+        padding-top: 24px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+        img{
+            width: 214px;
+            border-radius: 0px 0px 25px 0px;
+        }
+    }
+
+
+    .image-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+      
+      .image-container img {
+        display: block;
+      }
+      
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      .hidden-star{
+        position: absolute;
+        opacity: 100;
+        z-index:    -5;
+        width: 50px !important;
+      }
+      .overlay path {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        transition: stroke-dashoffset 1.5s ease;
+      }
+      
+      .mblock:hover .overlay {
+        opacity: 1;
+      }
+      .mblock:hover .overlay path {
+        stroke-dashoffset: 0;
+      }
+      .hidden-star__active{
+        width: 300px !important;
+        position: absolute;
+        opacity: 100;
+        z-index:    -5;
+      }
+
+
+
+
+
+    .tg-link{
+        width: 152px;
+        padding: 8px 14px 8px 14px;
+        background-color: #161616;
+        border-radius: 16px;
+        
+    }
+    .tg-link img{
+        width: 24px;
+    }
+   
